@@ -54,7 +54,7 @@ const Home: React.FC<HomeProps> = () => {
       : null;
     setUser(parsedUserStored);
     fetch(
-      `https://heart-guardian-back.vercel.app//bpm/${parsedUserStored?.email}`
+      `https://heart-guardian-service.vercel.app//bpm/${parsedUserStored?.email}`
     )
       .then((response) => response.json())
       .then((data: Bpms) => {

@@ -49,14 +49,14 @@ const SecurityQuestions: React.FC<SecurityQuestionsProps> = (
       ? JSON.parse(userStored)
       : null;
     setUser(parsedUserStored);
-    fetch("https://heart-guardian-back.vercel.app//questions")
+    fetch("https://heart-guardian-service.vercel.app//questions")
       .then((response) => response.json())
       .then((data) => setQuestions(data));
   }, []);
 
   const notifyEmergencyContact = () => {
     console.log("notify to emergency contact");
-    fetch(`https://heart-guardian-back.vercel.app//emergency/${user?.email}`)
+    fetch(`https://heart-guardian-service.vercel.app//emergency/${user?.email}`)
       .then((response) => {
         if (response.ok) {
           return response.json();

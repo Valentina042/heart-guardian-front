@@ -80,7 +80,7 @@ const SignUp: React.FC<SignUpProps> = () => {
         age: eAge,
       },
     };
-    fetch("https://heart-guardian-back.vercel.app//users/", {
+    fetch("https://heart-guardian-service.vercel.app//users/", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
