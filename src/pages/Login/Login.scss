@@ -1,0 +1,23 @@
+.image-container {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#login-card {
+  margin-top: 5%;
+}
+
+
+.login-inputs {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}

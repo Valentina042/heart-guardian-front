@@ -1,0 +1,8 @@
+.image-container-home {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    margin-top: 0.6%;
+  }
