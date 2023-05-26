@@ -20,7 +20,7 @@ const Login: React.FC<LoginProps> = () => {
   const MySwal = withReactContent(Swal);
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    fetch("https://heart-guardian-service.vercel.app//users/login", {
+    fetch("https://heart-guardian-service.vercel.app/users/login", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
